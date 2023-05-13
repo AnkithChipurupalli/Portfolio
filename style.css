@@ -1,0 +1,259 @@
+@import url('http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.container .left_Side
+{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+.ProfileText
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.ProfileText .imgBx
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;                                          
+    overflow: hidden;
+}
+.ProfileText .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ProfileText h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.ProfileText h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.ContactInfo
+{
+    padding-top: 40px;
+}
+.title
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.ContactInfo ul
+{
+    position: relative;
+}
+.ContactInfo ul li
+{
+    position: relative;
+    list-style: none; 
+    margin: 10px 0;
+    cursor: pointer;
+}
+.ContactInfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.ContactInfo ul li span
+{
+    color: #fff;
+    font-weight: 300;
+}
+.Education li
+{
+    list-style: none;
+    margin-bottom: 15px;
+}
+.Education h5
+{
+    color: #03a9f4;
+    font-weight: 500;
+}
+.Education h4:nth-child(2)
+{
+    color: #fff;
+    font-weight: 500;
+}
+.Education h4
+{
+    color: #fff;
+    font-weight: 250;
+}
+.Languages li
+{
+    color: #fff;
+    margin-bottom: 15px;
+    list-style: none;
+}
+.Languages .percent
+{
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+.Languages .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.container .right_Side
+{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.About
+{
+    margin-bottom: 50px;
+}
+.About :last-child
+{
+    margin-bottom: 0px;
+}
+.Profile
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p
+{
+    color: #333;
+}
+.Projects .Projects
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.Projects .box .text h4
+{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.Skills 
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+
+}
+.Skills li
+{
+    color: #003147;
+    margin-bottom: 15px;
+    list-style: none;
+}
+.Skills .percent
+{
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background: #f0f0f0;
+    display: block;
+    margin-top: 5px;
+}
+.Skills .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+.Intrests .Intrests
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.Intrests ul
+{
+    display: grid;
+    grid-template-columns: repeat(4,4fr);
+}
+.Intrests ul li
+{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 1;
+}
+.Intrests ul li .fa
+{
+    color: #03a9f4;
+    font-size: 19px;
+    width: 20px;
+}
+
+@media (max-width: 1000px)
+{
+
+.container
+    {
+        margin: 10px;
+    }
+}
